@@ -1,10 +1,40 @@
+import { useLoaderData } from "react-router-dom";
+import CarTable from "../CarTable/CarTable";
 
 
 const AllToys = () => {
+    const toyCars = useLoaderData();
+    console.log(toyCars)
     return (
+
         <div>
-            <h2>This is All Toys page</h2>
+            <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                    {/* head */}
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Sub_category</th>
+                            <th>price</th>
+                            <th>available_quantity</th>
+                            <th>Details</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            toyCars.map(car => <CarTable
+                                key={car._id}
+                                car={car}
+                            ></CarTable>)
+                        }
+                    </tbody>
+                </table>
+            </div>
+
         </div>
+
     );
 };
 
