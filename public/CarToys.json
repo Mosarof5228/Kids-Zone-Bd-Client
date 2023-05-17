@@ -1,0 +1,118 @@
+[
+  {
+    "picture_url": "https://example.com/toy1.jpg",
+    "name": "Race Car",
+    "sub_category": "Vehicle Toys",
+    "price": 19.99,
+    "rating": 4.5,
+    "available_quantity": 10,
+    "description": "The Race Car toy is a sleek and fast remote-controlled car designed for racing enthusiasts. It features a durable body, high-speed capabilities, and responsive controls for an exciting play experience."
+  },
+  {
+    "picture_url": "https://example.com/toy2.jpg",
+    "name": "Transforming Robot Car",
+    "sub_category": "Robot Toys",
+    "price": 24.99,
+    "rating": 4.2,
+    "available_quantity": 5,
+    "description": "The Transforming Robot Car toy is a versatile toy that can be both a car and a robot. It offers hours of fun as kids can switch between the two modes, controlling the toy's movements and exploring the world of robotics."
+  },
+  {
+    "picture_url": "https://example.com/toy3.jpg",
+    "name": "Remote Control Monster Truck",
+    "sub_category": "Vehicle Toys",
+    "price": 29.99,
+    "rating": 4.8,
+    "available_quantity": 8,
+    "description": "The Remote Control Monster Truck toy is a powerful off-road vehicle that can conquer any terrain. With its large wheels and robust design, it provides an exhilarating driving experience, allowing kids to perform stunts and race with friends."
+  },
+  {
+    "picture_url": "https://example.com/toy4.jpg",
+    "name": "Engineering Car Kit",
+    "sub_category": "STEM Toys",
+    "price": 39.99,
+    "rating": 4.6,
+    "available_quantity": 12,
+    "description": "The Engineering Car Kit is a STEM toy that introduces children to the world of engineering and construction. It comes with various parts and tools, allowing kids to build their own vehicles while learning principles of mechanics and problem-solving skills."
+  },
+  {
+    "picture_url": "https://example.com/toy5.jpg",
+    "name": "Electric RC Drift Car",
+    "sub_category": "Vehicle Toys",
+    "price": 34.99,
+    "rating": 4.4,
+    "available_quantity": 3,
+    "description": "The Electric RC Drift Car is a high-performance remote-controlled car designed for drifting and racing. It features a low-profile design, adjustable suspension, and precise controls, providing an authentic drift experience for car enthusiasts."
+  },
+  {
+    "picture_url": "https://example.com/toy6.jpg",
+    "name": "Learn to Spell Car",
+    "sub_category": "Language Toys",
+    "price": 14.99,
+    "rating": 4.0,
+    "available_quantity": 15,
+    "description": "The Learn to Spell Car toy is an educational toy that helps children develop their language and spelling skills. It features interactive buttons with letters, words, and sounds, making learning fun and engaging for young learners."
+  },
+  {
+    "picture_url": "https://example.com/toy7.jpg",
+    "name": "Solar-Powered Car",
+    "sub_category": "Science Toys",
+    "price": 19.99,
+    "rating": 4.7,
+    "available_quantity": 6,
+    "description": "The Solar-Powered Car toy"
+  },
+ {
+    "picture_url": "https://example.com/toy8.jpg",
+    "name": "Remote Control Off-Road Buggy",
+    "sub_category": "Vehicle Toys",
+    "price": 39.99,
+    "rating": 4.3,
+    "available_quantity": 7,
+    "description": "The Remote Control Off-Road Buggy is a rugged and powerful toy car that can conquer rough terrains. With its four-wheel drive, independent suspension, and responsive controls, it provides an adrenaline-filled off-road driving experience."
+  },
+  {
+    "picture_url": "https://example.com/toy9.jpg",
+    "name": "Car Mechanic Tool Set",
+    "sub_category": "Role-Play Toys",
+    "price": 29.99,
+    "rating": 4.1,
+    "available_quantity": 9,
+    "description": "The Car Mechanic Tool Set is a role-play toy that allows children to become mechanics and repair cars. It includes various tools such as wrenches, screwdrivers, and a toy car engine, fostering imaginative play and teaching basic mechanical skills."
+  },
+  {
+    "picture_url": "https://example.com/toy10.jpg",
+    "name": "Wooden Car Ramp Toy",
+    "sub_category": "Educational Toys",
+    "price": 24.99,
+    "rating": 4.6,
+    "available_quantity": 11,
+    "description": "The Wooden Car Ramp Toy is an educational toy that promotes fine motor skills and hand-eye coordination. It features a ramp with multiple levels and colorful cars, allowing children to explore concepts of gravity and motion through play."
+  },
+  {
+    "picture_url": "https://example.com/toy11.jpg",
+    "name": "RC Lamborghini Veneno",
+    "sub_category": "Vehicle Toys",
+    "price": 49.99,
+    "rating": 4.9,
+    "available_quantity": 4,
+    "description": "The RC Lamborghini Veneno is a luxurious and high-performance remote-controlled car modeled after the famous sports car. With its detailed design, realistic features, and precise controls, it offers an immersive driving experience for car enthusiasts."
+  },
+  {
+    "picture_url": "https://example.com/toy12.jpg",
+    "name": "Counting Car Park",
+    "sub_category": "Math Toys",
+    "price": 19.99,
+    "rating": 4.2,
+    "available_quantity": 14,
+    "description": "The Counting Car Park toy is a math learning toy that helps children develop their counting and number recognition skills. It includes numbered parking spaces, cars, and interactive buttons, making learning numbers engaging and interactive."
+  },
+  {
+    "picture_url": "https://example.com/toy13.jpg",
+    "name": "Dinosaur Car Launcher",
+    "sub_category": "Imaginative Play",
+    "price": 34.99,
+    "rating": 4.7,
+    "available_quantity": 6,
+    "description": "The Dinosaur Car Launcher is an exciting toy that combines cars and dinosaurs. Kids can load the cars into the dinosaur launcher and watch them zoom off, sparking imaginative play and creating thrilling racing adventures."
+  }]

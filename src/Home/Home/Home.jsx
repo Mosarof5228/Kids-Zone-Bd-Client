@@ -1,9 +1,10 @@
-import Main from "../../Layout/Main";
+import AllToys from "../AllToys/AllToys";
+
 
 const Home = () => {
     return (
         <div>
-            <Main></Main>
+            <AllToys></AllToys>
         </div>
     );
 };
