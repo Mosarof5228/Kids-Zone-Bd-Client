@@ -1,10 +1,18 @@
-import { useLoaderData } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
+// import { useLoaderData } from "react-router-dom";
 import CarTable from "../CarTable/CarTable";
 
 
 const AllToys = () => {
-    const toyCars = useLoaderData();
-    console.log(toyCars)
+    const [toyCars, setToyCars] = useState([]);
+    // const toyCars = useLoaderData();
+    // console.log(toyCars);
+    useEffect(() => {
+        fetch('http://localhost:5000/allToys')
+            .then(res => res.json())
+            .then(data => setToyCars(data))
+    }, [])
     return (
 
         <div>
