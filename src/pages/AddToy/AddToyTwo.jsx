@@ -1,8 +1,10 @@
-import { useContext } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
+
+import { useContext } from 'react';
+import Swal from 'sweetalert2';
+import { AuthContext } from '../../providers/AuthProvider';
 
 
-const AddToy = () => {
+const AddToyTwo = () => {
     const { user } = useContext(AuthContext)
     console.log(user)
     const handleAddToy = (event) => {
@@ -16,8 +18,7 @@ const AddToy = () => {
         const price = form.price.value;
         const rating = form.rating.value;
         const quantity = form.quantity.value;
-        console.log(name)
-        const toy = {
+        const singleToy = {
             name,
             photo,
             saller_name,
@@ -27,7 +28,31 @@ const AddToy = () => {
             rating,
             quantity,
         }
-        console.log(toy)
+        console.log(singleToy)
+        fetch("http://localhost:5000/addedToys", {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(singleToy),
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Successful',
+                        text: 'Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'close this'
+                    })
+                }
+            })
+
+
+
+
+
     }
     return (
         <form onSubmit={handleAddToy} className="mb-8 px-2 mx-2 md:mx-4 " >
@@ -36,8 +61,8 @@ const AddToy = () => {
                 <input className="input input-bordered " type="text" name="name" id="" placeholder="name" />
                 <input className="input input-bordered " type="text" name="photo" id="" placeholder="photo" />
                 <input className="input input-bordered " type="text" name="sallerName" id="" placeholder="Saller Name" />
-                <input className="input input-bordered " type="email" value={user.email} name="salerEmail" placeholder="saler email" id="" />
-                <input className="input input-bordered " type="text" value={user.displayName} name='subCategory' placeholder="sub category" />
+                <input className="input input-bordered " type="email" name="salerEmail" value={user.email} placeholder="saler email" id="" />
+                <input className="input input-bordered " type="text" name='subCategory' value={user.displayName} placeholder="sub category" />
 
 
                 <input className="input input-bordered" type="text" name="price" id="" placeholder="Price" />
@@ -49,5 +74,6 @@ const AddToy = () => {
 
         </form>
     );
-}
-export default AddToy;
+};
+
+export default AddToyTwo;

@@ -1,21 +1,30 @@
 
 import logimg from '../../assets/image/logimg3.webp'
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 
 const Login = () => {
-    const { login } = useContext(AuthContext)
+    const { login, user } = useContext(AuthContext)
+    console.log(user)
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+
+
     const handleLogin = (event) => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password)
+
         login(email, password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                form.reset()
+                navigate(from, { replace: true })
             })
             .catch(error => {
                 console.log(error)

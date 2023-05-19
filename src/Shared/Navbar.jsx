@@ -19,10 +19,14 @@ const Navbar = () => {
     const navItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
-        {/* {
-            user ? <li onClick={handleLogOut}><Link>Logout</Link></li> :
-                <li><Link to='/login'>Login</Link></li>
-        } */}
+
+        {
+            user ? <>
+                <li><Link to='myToys'>MyToys</Link></li>
+                <li><Link to='addToy'>AddToy</Link></li>
+            </> : ""
+
+        }
 
     </>
     return (
