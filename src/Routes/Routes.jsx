@@ -8,6 +8,7 @@ import Login from "../pages/Login/Login";
 import MyToys from "../pages/MyToys/MyToys";
 import Registration from "../pages/Registration/Registration";
 import TestPage from "../pages/TestPage/TestPage";
+import ViewDetails from "../pages/ViewDetails/ViewDetails";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 const router = createBrowserRouter([
@@ -48,6 +49,12 @@ const router = createBrowserRouter([
             {
                 path: 'galary',
                 element: <GalaryPage></GalaryPage>
+            },
+            {
+                path: '/viewDetails/:id',
+                element: <ViewDetails></ViewDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/allToys/${params.id}`)
+
             }
 
         ]
