@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
 import MyToyTable from "./MyToyTable";
 
@@ -10,14 +11,42 @@ import MyToyTable from "./MyToyTable";
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
-    console.log(user)
+
     const [myToys, setMyToys] = useState([])
     useEffect(() => {
         fetch(`http://localhost:5000/allToys?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setMyToys(data))
     }, [user])
-    console.log(myToys)
+
+    const handleDelete = (id) => {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/alltoys/${id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.deletedCount > 0) {
+                            const remainingToys = myToys.filter(toys => toys._id !== id)
+                            setMyToys(remainingToys)
+                            Swal.fire(
+                                'Deleted Toy Successfully '
+                            )
+                        }
+                    })
+            }
+        })
+    }
+
     return (
 
 
@@ -41,6 +70,7 @@ const MyToys = () => {
                             myToys.map(myToy => <MyToyTable
                                 key={myToy._id}
                                 myToy={myToy}
+                                handleDelete={handleDelete}
                             ></MyToyTable>)
                         }
                     </tbody>
