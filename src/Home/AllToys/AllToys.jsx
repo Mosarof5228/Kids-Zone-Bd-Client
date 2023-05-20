@@ -6,6 +6,7 @@ import CarTable from "../CarTable/CarTable";
 
 const AllToys = () => {
     const [toyCars, setToyCars] = useState([]);
+    const [textSearch, setTextSearch] = useState('');
     // const toyCars = useLoaderData();
     // console.log(toyCars);
     useEffect(() => {
@@ -13,9 +14,20 @@ const AllToys = () => {
             .then(res => res.json())
             .then(data => setToyCars(data))
     }, [])
+
+    const handleTextSearch = () => {
+        fetch(`http://localhost:5000/toySearch/${textSearch}`)
+            .then((res) => res.json())
+            .then((data) => {
+                setToyCars(data);
+            });
+    };
+
     return (
 
         <div>
+            <input onChange={(event) => { setTextSearch(event.target.value) }} type="text" placeholder="Type here" className="input w-full max-w-xs" />
+            <button onClick={handleTextSearch} className="btn btn-secondary">Button</button>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                     {/* head */}
@@ -27,7 +39,7 @@ const AllToys = () => {
                             <th>price</th>
                             <th>available_quantity</th>
                             <th>Details</th>
-                            
+
 
                         </tr>
                     </thead>
