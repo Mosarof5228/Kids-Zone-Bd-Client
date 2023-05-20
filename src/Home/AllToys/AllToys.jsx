@@ -32,7 +32,7 @@ const AllToys = () => {
                 <table className="table table-zebra w-full">
                     {/* head */}
                     <thead>
-                        <tr>
+                        <tr className="border border-4 border-indigo-600 bg-indigo-400">
                             <th>No</th>
                             <th>Name</th>
                             <th>Sub_category</th>

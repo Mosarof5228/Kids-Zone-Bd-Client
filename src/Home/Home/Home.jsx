@@ -1,13 +1,16 @@
 
+import Banner from "../../pages/Banner/Banner";
+import Category from "../../pages/Category/Category";
 import GalaryPage from "../../pages/GalaryPage/GalaryPage";
-import AllToys from "../AllToys/AllToys";
+// import GalaryPage from "../../pages/GalaryPage/GalaryPage";
+
 
 
 const Home = () => {
     return (
         <div>
-            {/* <Banner></Banner> */}
-            <AllToys></AllToys>
+            <Banner></Banner>
+            <Category></Category>
             <GalaryPage></GalaryPage>
 
         </div>

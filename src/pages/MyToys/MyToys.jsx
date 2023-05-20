@@ -57,6 +57,7 @@ const MyToys = () => {
                     <thead>
                         <tr className="border-double border-4 border-indigo-500">
                             <th>No</th>
+                            <th>image</th>
                             <th>Name</th>
                             <th>Sub_category</th>
                             <th>price</th>
