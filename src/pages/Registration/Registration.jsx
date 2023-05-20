@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import signupImg from '../../assets/image/signupimg1.avif'
 import { AuthContext } from '../../providers/AuthProvider';
 const Registration = () => {
-    const { makeUser } = useContext(AuthContext)
+    const { makeUser, loading } = useContext(AuthContext)
     const handleRegistration = (event) => {
         event.preventDefault();
         const form = event.target;

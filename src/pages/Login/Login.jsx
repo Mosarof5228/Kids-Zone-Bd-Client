@@ -3,9 +3,12 @@ import logimg from '../../assets/image/logimg3.webp'
 import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import { FaGoogle } from "react-icons/fa";
+
+
 
 const Login = () => {
-    const { login, user } = useContext(AuthContext)
+    const { login, user, googleLogin } = useContext(AuthContext)
     console.log(user)
     const navigate = useNavigate();
     const location = useLocation();
@@ -25,6 +28,17 @@ const Login = () => {
                 console.log(user);
                 form.reset()
                 navigate(from, { replace: true })
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+    }
+    const handleGoggleLogin = () => {
+        googleLogin()
+            .then(result => {
+                const logedUser = result.user;
+                console.log(logedUser);
             })
             .catch(error => {
                 console.log(error)
@@ -62,6 +76,18 @@ const Login = () => {
                                 <input className="btn btn-primary" type="submit" value="LOGIN" />
                             </div>
                         </form>
+
+                        <div className="mt-3 text-center">
+                            <button onClick={handleGoggleLogin}
+
+                                className=" text-red-500 py-1 px-2 rounded-lg me-3"
+                            >
+                                <div className='flex items-center gap-2'>
+                                    <FaGoogle></FaGoogle>
+                                    <h2>Goggle</h2>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

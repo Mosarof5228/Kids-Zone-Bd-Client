@@ -6,6 +6,7 @@ import AddToyTwo from "../pages/AddToy/AddToyTwo";
 import GalaryPage from "../pages/GalaryPage/GalaryPage";
 import Login from "../pages/Login/Login";
 import MyToys from "../pages/MyToys/MyToys";
+import UpdateToys from "../pages/MyToys/UpdateToys/UpdateToys";
 import Registration from "../pages/Registration/Registration";
 import TestPage from "../pages/TestPage/TestPage";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
@@ -55,6 +56,11 @@ const router = createBrowserRouter([
                 element: <ViewDetails></ViewDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/allToys/${params.id}`)
 
+            },
+            {
+                path: '/editDetails/:id',
+                element: <UpdateToys></UpdateToys>,
+                loader: ({ params }) => fetch(`http://localhost:5000/allToys/${params.id}`)
             }
 
         ]
