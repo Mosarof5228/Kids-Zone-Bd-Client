@@ -54,7 +54,7 @@ const MyToys = () => {
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                     {/* head */}
-                    <thead className="bg-red-500">
+                    <thead className="">
                         <tr className="border-double border-4 border-indigo-500 ">
                             <th >No</th>
                             <th>image</th>

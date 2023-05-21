@@ -10,7 +10,6 @@ const CarTable = ({ car }) => {
             <td>{subcategory}</td>
             <td>{price}</td>
             <td>{quantity}</td>
-            {/* <td><button>View Details</button></td> */}
             <td><Link to={`/viewDetails/${_id}`} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">View Details</Link></td>
         </tr>
     );
