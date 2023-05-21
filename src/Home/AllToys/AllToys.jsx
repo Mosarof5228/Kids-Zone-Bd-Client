@@ -25,14 +25,16 @@ const AllToys = () => {
 
     return (
 
-        <div>
-            <input onChange={(event) => { setTextSearch(event.target.value) }} type="text" placeholder="Type here" className="input w-full max-w-xs" />
-            <button onClick={handleTextSearch} className="btn btn-secondary">Button</button>
+        <div className="bg-purple-500">
+            <div className="mx-auto text-center py-4">
+                <input onChange={(event) => { setTextSearch(event.target.value) }} type="text" placeholder="Type here" className="input w-full max-w-xs bg-black-500 py-4 " />
+                <button onClick={handleTextSearch} className="btn bg-purple-700 border-none">Button</button>
+            </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                     {/* head */}
-                    <thead>
-                        <tr className="border border-4 border-indigo-600 bg-indigo-400">
+                    <thead className="">
+                        <tr className="border border-4 border-indigo-600">
                             <th>No</th>
                             <th>Name</th>
                             <th>Sub_category</th>
@@ -44,12 +46,14 @@ const AllToys = () => {
                         </tr>
                     </thead>
                     <tbody>
+
                         {
                             toyCars.map(car => <CarTable
                                 key={car._id}
                                 car={car}
                             ></CarTable>)
                         }
+
                     </tbody>
                 </table>
             </div>

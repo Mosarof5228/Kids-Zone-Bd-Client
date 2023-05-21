@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 const CarTable = ({ car }) => {
     console.log(car)
-    const { name, sub_category, price, available_quantity, _id } = car;
+    const { name, subcategory, price, quantity, _id } = car;
     return (
-        <tr>
-            <td>*</td>
+        <tr >
+            <td className="bg-purple-600">*</td>
             <td>{name}</td>
-            <td>{sub_category}</td>
+            <td>{subcategory}</td>
             <td>{price}</td>
-            <td>{available_quantity}</td>
+            <td>{quantity}</td>
             {/* <td><button>View Details</button></td> */}
-            <td><Link to={`/viewDetails/${_id}`} className="btn btn-primary">View Details</Link></td>
+            <td><Link to={`/viewDetails/${_id}`} className="btn bg-purple-700">View Details</Link></td>
         </tr>
     );
 };
