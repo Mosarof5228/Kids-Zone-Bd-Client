@@ -7,8 +7,10 @@ const CategoryCard = ({ categoryData }) => {
     } = categoryData;
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src={photo} alt="Shoes" /></figure>
-            <div className="card-body fw-bold">
+            <div className="h-[50%] bg-gray-300">
+                <figure><img className="h-48 w-full" src={photo} alt="Shoes" /></figure>
+            </div>
+            <div className="card-body shadow-lg fw-bold bg-[#D7F0EC]">
                 <h2 className="card-title">Name:{name}</h2>
                 <p>SubCategory:{subcategory}</p>
                 <p>Quantity:{quantity}</p>

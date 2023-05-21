@@ -10,14 +10,14 @@ const Category = () => {
     console.log(categorysData);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/categories?category=${categories}`)
+        fetch(`https://kids-zone-bd-server.vercel.app/categories?category=${categories}`)
             .then((res) => res.json())
             .then((data) => setCategorysData(data));
     }, [categories]);
 
     return (
         <Tabs>
-            <TabList>
+            <TabList className="font-bold mb-3 text-center border border-4 border-[#D7F0EC]">
                 <Tab onClick={() => setCategories("bike")}>Bike</Tab>
                 <Tab onClick={() => setCategories("manual car")}>Manual Car</Tab>
                 <Tab onClick={() => setCategories("remote car")}>Remote Car</Tab>
@@ -45,4 +45,4 @@ const Category = () => {
 
 export default Category;
 
-//http://localhost:5000/categories?category=bike
+//https://kids-zone-bd-server.vercel.app/categories?category=bike

@@ -17,21 +17,21 @@ const Navbar = () => {
 
 
     const navItems = <>
-        <button ><Link to='/'>Home</Link></button>
-        <button ><Link to='/allToys'>All Toys</Link></button>
-        <button ><Link to='/blog'>Blog</Link></button>
+        <button className="mr-4 font-bold" ><Link to='/'>Home</Link></button>
+        <button className="mr-4 font-bold" ><Link to='/allToys'>All Toys</Link></button>
+        <button className="mr-4 font-bold" ><Link to='/blog'>Blog</Link></button>
 
         {
             user ? <>
-                <li><Link to='myToys'>MyToys</Link></li>
-                <li><Link to='addToy'>AddToy</Link></li>
+                <li className="font-bold" ><Link to='myToys'>MyToys</Link></li>
+                <li className="font-bold" ><Link to='addToy'>AddToy</Link></li>
             </> : ""
 
         }
 
     </>
     return (
-        <div className="navbar bg-base-100 h-24 mb-4 bg-purple-500">
+        <div className="navbar bg-base-100 h-24 mb-4 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,7 +42,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to='/' className="btn btn-ghost normal-case text-xl">
-                    <h2 className="text-3xl">Kids Zone Bd Ltd.</h2>
+                    <img src="https://dlkidzo.backdt.com/demos/img/logo/logo_01.png" alt="" />
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">

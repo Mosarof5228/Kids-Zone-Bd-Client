@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             {
                 path: 'allToys',
                 element: <AllToys></AllToys>,
-                // loader: () => fetch('http://localhost:5000/allToys')
+                // loader: () => fetch('https://kids-zone-bd-server.vercel.app/allToys')
             },
             {
                 path: 'login',
@@ -54,13 +54,13 @@ const router = createBrowserRouter([
             {
                 path: '/viewDetails/:id',
                 element: <ViewDetails></ViewDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allToys/${params.id}`)
+                loader: ({ params }) => fetch(`https://kids-zone-bd-server.vercel.app/allToys/${params.id}`)
 
             },
             {
                 path: '/editDetails/:id',
                 element: <UpdateToys></UpdateToys>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allToys/${params.id}`)
+                loader: ({ params }) => fetch(`https://kids-zone-bd-server.vercel.app/allToys/${params.id}`)
             }
 
         ]

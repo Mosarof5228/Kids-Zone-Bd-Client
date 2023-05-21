@@ -29,7 +29,7 @@ const AddToyTwo = () => {
             quantity,
         }
         console.log(singleToy)
-        fetch("http://localhost:5000/addedToys", {
+        fetch("https://kids-zone-bd-server.vercel.app/addedToys", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

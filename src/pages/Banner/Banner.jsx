@@ -1,19 +1,19 @@
-import img1 from '../../assets/image/img5.jpg'
-import img2 from '../../assets/image/img2.jpg'
-import img3 from '../../assets/image/img3.jpg'
-import img4 from '../../assets/image/img4.jpg'
+import img1 from '../../assets/image/bannerImg1.jpg'
+import img2 from '../../assets/image/bannerImg2.jpg'
+import img3 from '../../assets/image/bannerImg3.jpg'
+import img4 from '../../assets/image/bannerImg4.jpg'
 const Banner = () => {
     return (
-        <div className="carousel w-full">
+        <div className="carousel w-full mb-4">
             <div id="slide1" className="carousel-item relative w-full h-[600px] rounded-xl ">
                 <img src={img1} className="w-full rounded-xl" />
                 <div className="absolute flex items-center   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] h-full  rounded-xl">
                     <div className='text-white space-y-7 w-1/2 ml-12'>
-                        <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                        <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                        <h2 className='text-6xl font-bold'>Your Child Our Responsibility</h2>
+                        <p>Welcome to Kids Car Website, your one-stop destination for all things related to kids' cars! Whether you're a parent looking to surprise your child with a fun and exciting ride or a car enthusiast searching for the perfect gift, we've got you covered.</p>
                         <div>
-                            <button className="btn btn-accent mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-secondary">Latest Project</button>
+                            <button className="btn btn-accent mr-5">Most Popular Kids Car</button>
+                            <button className="btn btn-outline btn-secondary">All Kis Car Price</button>
                         </div>
                     </div>
                 </div>
@@ -26,11 +26,11 @@ const Banner = () => {
                 <img src={img2} className="w-full  rounded-xl" />
                 <div className="absolute flex items-center   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] h-full rounded-xl">
                     <div className='text-white space-y-7 w-1/2 ml-12'>
-                        <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                        <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                        <h2 className='text-6xl font-bold'>Best Kids' Cars for Different Age Groups</h2>
+                        <p>Welcome to Kids Car Website, your one-stop destination for all things related to kids' cars! Whether you're a parent looking to surprise your child with a fun and exciting ride or a car enthusiast searching for the perfect gift, we've got you covered.</p>
                         <div>
-                            <button className="btn btn-accent mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-secondary">Latest Project</button>
+                            <button className="btn btn-accent mr-5">Most Popular Kids Car</button>
+                            <button className="btn btn-outline btn-secondary">All Kis Car Price</button>
                         </div>
                     </div>
                 </div>
@@ -43,11 +43,11 @@ const Banner = () => {
                 <img src={img3} className="w-full rounded-xl" />
                 <div className="absolute flex items-center   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] h-full rounded-xl">
                     <div className='text-white space-y-7 w-1/2 ml-12'>
-                        <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                        <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                        <h2 className='text-6xl font-bold'>Best Kids' Cars for Different Age Groups</h2>
+                        <p>Welcome to Kids Car Website, your one-stop destination for all things related to kids' cars! Whether you're a parent looking to surprise your child with a fun and exciting ride or a car enthusiast searching for the perfect gift, we've got you covered.</p>
                         <div>
-                            <button className="btn btn-accent mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-secondary">Latest Project</button>
+                            <button className="btn btn-accent mr-5">Most Popular Kids Car</button>
+                            <button className="btn btn-outline btn-secondary">All Kis Car Price</button>
                         </div>
                     </div>
                 </div>
@@ -60,11 +60,11 @@ const Banner = () => {
                 <img src={img4} className="w-full rounded-xl" />
                 <div className="absolute flex items-center   bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] h-full rounded-xl">
                     <div className='text-white space-y-7 w-1/2 ml-12'>
-                        <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
-                        <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                        <h2 className='text-6xl font-bold'>Best Kids' Cars for Different Age Groups</h2>
+                        <p>Welcome to Kids Car Website, your one-stop destination for all things related to kids' cars! Whether you're a parent looking to surprise your child with a fun and exciting ride or a car enthusiast searching for the perfect gift, we've got you covered.</p>
                         <div>
-                            <button className="btn btn-accent mr-5">Discover More</button>
-                            <button className="btn btn-outline btn-secondary">Latest Project</button>
+                            <button className="btn btn-accent mr-5">Most Popular Kids Car</button>
+                            <button className="btn btn-outline btn-secondary">All Kis Car Price</button>
                         </div>
                     </div>
                 </div>

@@ -10,13 +10,13 @@ const AllToys = () => {
     // const toyCars = useLoaderData();
     // console.log(toyCars);
     useEffect(() => {
-        fetch('http://localhost:5000/allToys')
+        fetch('https://kids-zone-bd-server.vercel.app/allToys')
             .then(res => res.json())
             .then(data => setToyCars(data))
     }, [])
 
     const handleTextSearch = () => {
-        fetch(`http://localhost:5000/toySearch/${textSearch}`)
+        fetch(`https://kids-zone-bd-server.vercel.app/toySearch/${textSearch}`)
             .then((res) => res.json())
             .then((data) => {
                 setToyCars(data);
