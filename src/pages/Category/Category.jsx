@@ -33,11 +33,21 @@ const Category = () => {
             </TabPanel>
 
             <TabPanel>
-                {categorysData.length}
+                <div className='grid gap-y-4  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-auto '>
+                    {categorysData.map(categoryData => <CategoryCard
+                        key={categoryData._id}
+                        categoryData={categoryData}
+                    ></CategoryCard>)}
+                </div>
             </TabPanel>
 
             <TabPanel>
-                {categorysData.length}
+                <div className='grid gap-y-4  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-auto '>
+                    {categorysData.map(categoryData => <CategoryCard
+                        key={categoryData._id}
+                        categoryData={categoryData}
+                    ></CategoryCard>)}
+                </div>
             </TabPanel>
         </Tabs>
     );

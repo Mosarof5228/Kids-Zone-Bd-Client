@@ -10,7 +10,7 @@ const AddToyTwo = () => {
     const handleAddToy = (event) => {
         event.preventDefault();
         const form = event.target;
-        const name = form.name.value;
+        const name = form.carModel.value;
         const photo = form.photo.value;
         const saller_name = form.sallerName.value;
         const saller_email = form.salerEmail.value;
@@ -58,7 +58,7 @@ const AddToyTwo = () => {
         <form onSubmit={handleAddToy} className="mb-8 px-2 mx-2 md:mx-4 " >
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 ">
 
-                <input className="input input-bordered bg-red-500" type="text" name="name" id="" placeholder="name" />
+                <input className="input input-bordered bg-red-500" type="text" name="carModel" id="" placeholder="Car Model" />
                 <input className="input input-bordered " type="text" name="photo" id="" placeholder="photo" />
                 <input className="input input-bordered " type="text" name="sallerName" id="" placeholder="Saller Name" />
                 <input className="input input-bordered " type="email" name="salerEmail" value={user.email} placeholder="saler email" id="" />

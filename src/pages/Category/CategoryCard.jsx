@@ -2,7 +2,7 @@
 
 const CategoryCard = ({ categoryData }) => {
     console.log(categoryData)
-    const { photo, price, quantity, rating, subcategory, saller_name
+    const { photo, price, quantity, rating, subcategory, name,
 
     } = categoryData;
     return (
