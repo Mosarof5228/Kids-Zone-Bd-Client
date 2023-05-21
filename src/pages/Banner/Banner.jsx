@@ -12,8 +12,8 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Your Child Our Responsibility</h2>
                         <p>Welcome to Kids Car Website, your one-stop destination for all things related to kids' cars! Whether you're a parent looking to surprise your child with a fun and exciting ride or a car enthusiast searching for the perfect gift, we've got you covered.</p>
                         <div>
-                            <button className="btn btn-accent mr-5">Most Popular Kids Car</button>
-                            <button className="btn btn-outline btn-secondary">All Kis Car Price</button>
+                            <button className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white b mr-5">Most Popular Kids Car</button>
+                            <button className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">All Kis Car Price</button>
                         </div>
                     </div>
                 </div>

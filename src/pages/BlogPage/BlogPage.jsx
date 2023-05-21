@@ -42,7 +42,7 @@ const BlogPage = () => {
 
                         <div className="p-6">
                             <h2 className="text-xl font-bold text-gray-800 mb-2">What is MongoDB aggregate and how does it work?</h2>
-                            <p className="text-gray-600">MongoDB's aggregate is a powerful feature that allows for data processing and analysis. It utilizes a pipeline-based approach to perform complex operations, including filtering, grouping, sorting, and transforming data within a collection. Aggregation pipelines consist of stages that sequentially process the data, enabling advanced querying and analytics capabilities.</p>
+                            <p className="text-gray-600">MongoDB aggregate is a powerful feature that allows for data processing and analysis. It utilizes a pipeline-based approach to perform complex operations, including filtering, grouping, sorting, and transforming data within a collection. Aggregation pipelines consist of stages that sequentially process the data, enabling advanced querying and analytics capabilities.</p>
                             <a href="#" className="mt-4 inline-block bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Read More</a>
                         </div>
                     </div>

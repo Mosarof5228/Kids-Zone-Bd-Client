@@ -6,7 +6,7 @@ const MyToyTable = ({ myToy, handleDelete }) => {
     const { name, subcategory, price, quantity, _id, photo } = myToy;
 
     return (
-        <tr className="border border-4 border-indigo-600 bg-indigo-400 ">
+        <tr className="border  bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold ">
             <td>#</td>
             <td>
                 <img className="w-24 h-24" src={photo} alt="" />
@@ -15,8 +15,8 @@ const MyToyTable = ({ myToy, handleDelete }) => {
             <td>{subcategory}</td>
             <td>{price}</td>
             <td>{quantity}</td>
-            <td><Link to={`/editDetails/${_id}`} className="btn btn-primary">Edit</Link></td>
-            <td><button onClick={() => handleDelete(_id)} className="btn btn-primary">Delete(X)</button></td>
+            <td><Link to={`/editDetails/${_id}`} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Edit</Link></td>
+            <td><button onClick={() => handleDelete(_id)} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Delete</button></td>
         </tr>
     );
 };

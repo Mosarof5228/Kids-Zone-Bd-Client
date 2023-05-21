@@ -55,15 +55,16 @@ const AddToyTwo = () => {
 
     }
     return (
-        <form onSubmit={handleAddToy} className="mb-8 px-2 mx-2 md:mx-4 " >
+        <form onSubmit={handleAddToy} className="mb-8 px-2 mx-2 md:mx-4 bg-purple-500 py-6 px-2 " >
+            <h2 className='text-center mb-4 text-4xl font-bold text-white'>Add the Joy of Kid Toys Cars</h2>
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 ">
 
-                <input className="input input-bordered bg-red-500" type="text" name="carModel" id="" placeholder="Car Model" />
+                <input className="input input-bordered " type="text" name="carModel" id="" placeholder="Car Model" />
                 <input className="input input-bordered " type="text" name="photo" id="" placeholder="photo" />
                 <input className="input input-bordered " type="text" name="sallerName" id="" placeholder="Saller Name" />
                 <input className="input input-bordered " type="email" name="salerEmail" value={user.email} placeholder="saler email" id="" />
 
-                <input className="input input-bordered " type="text" name="category" placeholder="category" id="" />
+                <input className="input input-bordered " type="text" name="category" placeholder="category bike or remote car or manual car" id="" />
 
 
 
@@ -73,7 +74,7 @@ const AddToyTwo = () => {
                 <input className="input input-bordered" type="text" name="quantity" id="" placeholder="A.Quantity" />
 
             </div>
-            <input className="input input-bordered mt-4 w-1/3 mx-auto bg-purple-500 text-white ml-[25%]" type="submit" value="Add toy" />
+            <input className="input input-bordered mt-4 w-1/3 mx-auto bg-purple-800 border border-4 border-white text-white ml-[25%]" type="submit" value="Add toy" />
 
         </form>
     );

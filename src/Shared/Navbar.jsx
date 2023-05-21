@@ -54,9 +54,9 @@ const Navbar = () => {
                 {
                     user ? <>
                         <img className=' rounded-full mr-2' style={{ height: "45px", width: "45px" }} title={user.displayName} src={user.photoURL} alt="" />
-                        <button onClick={handleLogOut} className="btn btn-outline btn-warning">Logout</button>
+                        <button onClick={handleLogOut} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">Logout</button>
 
-                    </> : <Link to='/login'><button className="btn btn-outline btn-warning">LogIn</button></Link>
+                    </> : <Link to='/login'><button className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">LogIn</button></Link>
                 }
 
 
