@@ -3,6 +3,7 @@ import AllToys from "../Home/AllToys/AllToys";
 import Home from "../Home/Home/Home";
 import Main from "../Layout/Main";
 import AddToyTwo from "../pages/AddToy/AddToyTwo";
+import BlogPage from "../pages/BlogPage/BlogPage";
 import GalaryPage from "../pages/GalaryPage/GalaryPage";
 import Login from "../pages/Login/Login";
 import MyToys from "../pages/MyToys/MyToys";
@@ -11,6 +12,7 @@ import Registration from "../pages/Registration/Registration";
 import TestPage from "../pages/TestPage/TestPage";
 import ViewDetails from "../pages/ViewDetails/ViewDetails";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import NotFoundPage from "../Shared/NotFoundPage";
 
 const router = createBrowserRouter([
     {
@@ -61,7 +63,16 @@ const router = createBrowserRouter([
                 path: '/editDetails/:id',
                 element: <UpdateToys></UpdateToys>,
                 loader: ({ params }) => fetch(`https://kids-zone-bd-server.vercel.app/allToys/${params.id}`)
-            }
+            },
+            {
+                path: '/blog',
+                element: <BlogPage></BlogPage>
+            },
+            {
+                path: '*',
+                element: <NotFoundPage></NotFoundPage>
+            },
+
 
         ]
     },
