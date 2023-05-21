@@ -28,7 +28,7 @@ const AllToys = () => {
         <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
             <div className="mx-auto text-center py-4">
                 <input onChange={(event) => { setTextSearch(event.target.value) }} type="text" placeholder="Type here" className="input w-full max-w-xs bg-black-500 py-4 " />
-                <button onClick={handleTextSearch} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-none">Button</button>
+                <button onClick={handleTextSearch} className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-none">Search</button>
             </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
