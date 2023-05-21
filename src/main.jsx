@@ -4,6 +4,7 @@ import { RouterProvider } from 'react-router-dom'
 import './index.css'
 import AuthProvider from './providers/AuthProvider'
 import router from './Routes/Routes'
+import 'aos/dist/aos.css';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
